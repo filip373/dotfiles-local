@@ -1,7 +1,6 @@
 # Bundler
 alias be="bundle exec"
 alias bers="bundle exec bin/rspec"
-alias bs="bundle exec spring"
 alias ss="bundle exec spring stop"
 
 # Git
