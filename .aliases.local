@@ -1,0 +1,21 @@
+# Bundler
+alias be="bundle exec"
+alias bers="bundle exec bin/rspec"
+alias bs="bundle exec spring"
+alias ss="bundle exec spring stop"
+
+# Git
+alias gs="git status"
+alias gpr="git remote prune origin"
+alias gco="git checkout"
+alias gl="git log"
+alias ga="git add"
+alias gag="git add ."
+alias gd="git diff"
+alias gds="git diff --staged"
+alias gsh="git show"
+alias gdb="git branch -d"
+alias gddb="git branch -D"
+alias gcm="git commit"
+alias gr="git reset"
+alias gst="git stash"

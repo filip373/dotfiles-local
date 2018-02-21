@@ -1,0 +1,61 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'airblade/vim-gitgutter'
+Plug 'alvan/vim-closetag'
+Plug 'digitaltoad/vim-pug'
+Plug 'isRuslan/vim-es6'
+Plug 'jiangmiao/auto-pairs'
+Plug 'lfilho/cosco.vim'
+Plug 'lilydjwg/colorizer'
+Plug 'MattesGroeger/vim-bookmarks'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'ngmy/vim-rubocop'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'tomlion/vim-solidity'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+call plug#end()
+
+"NERDTree
+let g:NERDTreeQuitOnOpen = 1
+nmap <leader>n :NERDTreeFocus<cr>
+
+"Vim Airline theme
+let g:airline_theme='solarized'
+
+"Syntastic config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+
+let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ["hbs", "css.scss"]  }
+nnoremap <leader>sc :SyntasticCheck<cr> :SyntasticToggleMode<cr>
+
+nmap <leader>s <C-w>
+nmap <leader>p <C-p>
+nmap <leader>q :q<cr>
+nmap <leader>e :e 
+nmap <leader>w :w<cr>
+nmap <leader>d <C-d>
+nmap <leader>u <C-u>
+nmap <leader>bp obinding.pry<esc>
+nmap <leader>cd :set clipboard=unnamed<esc>
+
+set pastetoggle=<F10>
+set ignorecase
+set smartcase
+set relativenumber
