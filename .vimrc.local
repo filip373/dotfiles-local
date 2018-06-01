@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'digitaltoad/vim-pug'
+Plug 'henrik/vim-indexed-search'
 Plug 'isRuslan/vim-es6'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lfilho/cosco.vim'
@@ -50,10 +51,8 @@ nmap <leader>p <C-p>
 nmap <leader>q :q<cr>
 nmap <leader>e :e 
 nmap <leader>w :w<cr>
-nmap <leader>d <C-d>
-nmap <leader>u <C-u>
-nmap <leader>bp obinding.pry<esc>
 nmap <leader>cd :set clipboard=unnamed<esc>
+nmap <leader>v :vsp<cr>
 
 set pastetoggle=<F10>
 set ignorecase
