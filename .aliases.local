@@ -2,6 +2,7 @@
 alias be="bundle exec"
 alias bers="bundle exec bin/rspec"
 alias ss="bundle exec spring stop"
+alias cop="bundle exec rubocop -a"
 
 # Git
 alias gs="git status"
