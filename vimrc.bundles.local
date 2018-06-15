@@ -16,3 +16,6 @@ Plug 'tomlion/vim-solidity'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+"This plugin raises an error about vim version
+UnPlug 'vim-go'
