@@ -1,26 +1,3 @@
-call plug#begin('~/.vim/plugged')
-
-Plug 'airblade/vim-gitgutter'
-Plug 'alvan/vim-closetag'
-Plug 'digitaltoad/vim-pug'
-Plug 'henrik/vim-indexed-search'
-Plug 'isRuslan/vim-es6'
-Plug 'jiangmiao/auto-pairs'
-Plug 'lfilho/cosco.vim'
-Plug 'lilydjwg/colorizer'
-Plug 'MattesGroeger/vim-bookmarks'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'ngmy/vim-rubocop'
-Plug 'pangloss/vim-javascript'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-Plug 'tomlion/vim-solidity'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
-call plug#end()
-
 "NERDTree
 let g:NERDTreeQuitOnOpen = 1
 nmap <leader>n :NERDTreeFocus<cr>
@@ -43,6 +20,7 @@ let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ["hbs", "css.scss"]  }
 nnoremap <leader>sc :SyntasticCheck<cr> :SyntasticToggleMode<cr>
 
+"Mappings
 nmap <leader>s <C-w>
 nmap <leader>p <C-p>
 nmap <leader>q :q<cr>
@@ -51,6 +29,7 @@ nmap <leader>w :w<cr>
 nmap <leader>cd :set clipboard=unnamed<esc>
 nmap <leader>v :vsp<cr>
 
+"General config
 set pastetoggle=<F10>
 set ignorecase
 set smartcase
