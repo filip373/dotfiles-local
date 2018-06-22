@@ -4,6 +4,7 @@ nmap <leader>n :NERDTreeFocus<cr>
 
 "Vim Airline theme
 let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 "Syntastic config
 set statusline+=%#warningmsg#
@@ -19,6 +20,9 @@ let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 
 let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ["hbs", "css.scss"]  }
 nnoremap <leader>sc :SyntasticCheck<cr> :SyntasticToggleMode<cr>
+
+"Indexed search config
+let g:indexed_search_numbered_only = 1
 
 "Mappings
 nmap <leader>s <C-w>
