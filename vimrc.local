@@ -3,8 +3,8 @@ let g:NERDTreeQuitOnOpen = 1
 nmap <leader>n :NERDTreeFocus<cr>
 
 "Vim Airline theme
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
+let g:airline_theme = 'solarized'
+let g:airline_solarized_bg = 'dark'
 
 "Syntastic config
 set statusline+=%#warningmsg#
@@ -15,10 +15,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
-let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ["hbs", "css.scss"]  }
+let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ["hbs", "css.scss"] }
 nnoremap <leader>sc :SyntasticCheck<cr> :SyntasticToggleMode<cr>
 
 "Indexed search config
