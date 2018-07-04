@@ -1,6 +1,6 @@
 "NERDTree
 let g:NERDTreeQuitOnOpen = 1
-nmap <leader>n :NERDTreeFocus<cr>
+nmap <leader>c :NERDTreeFocus<cr>
 
 "Vim Airline theme
 let g:airline_theme = 'solarized'
@@ -24,9 +24,11 @@ nnoremap <leader>sc :SyntasticCheck<cr> :SyntasticToggleMode<cr>
 "Indexed search config
 let g:indexed_search_numbered_only = 1
 
+"Fzf mapping
+nmap <leader>y :call fzf#run({'sink': 'e'})<cr>
+
 "Mappings
 nmap <leader>s <C-w>
-nmap <leader>p <C-p>
 nmap <leader>q :q<cr>
 nmap <leader>e :e 
 nmap <leader>w :w<cr>
