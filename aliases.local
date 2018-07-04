@@ -19,3 +19,10 @@ alias gddb="git branch -D"
 alias gcm="git commit"
 alias gr="git reset"
 alias gst="git stash"
+
+# Chromecast
+alias cast_start="(screen -S cast_session -X quit || true) && screen -dmS cast_session castnow && screen -r -S cast_session"
+alias cast_volume_up="screen -S cast_session -X stuff $'\e[A'"
+alias cast_volume_down="screen -S cast_session -X stuff $'\e[B'"
+alias cast_mute="screen -S cast_session -X stuff $'m'"
+alias cst="cast_start"
