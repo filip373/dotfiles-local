@@ -4,7 +4,6 @@ Plug 'digitaltoad/vim-pug'
 Plug 'henrik/vim-indexed-search'
 Plug 'isRuslan/vim-es6'
 Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'lfilho/cosco.vim'
 Plug 'lilydjwg/colorizer'
@@ -16,6 +15,8 @@ Plug 'tomlion/vim-solidity'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+Plug '/usr/local/opt/fzf'
 
 "the one below does not seem to make any effect
 UnPlug 'ctrlpvim/ctrlp.vim'
