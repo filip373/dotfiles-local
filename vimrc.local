@@ -25,11 +25,14 @@ nnoremap <leader>sc :SyntasticCheck<cr> :SyntasticToggleMode<cr>
 let g:indexed_search_numbered_only = 1
 
 "Fzf
-let $FZF_DEFAULT_COMMAND = "fd --hidden ."
-nmap <leader>y :call fzf#run({'sink': 'e'})<cr>
+let $FZF_DEFAULT_COMMAND = "fd --hidden --type file --exclude .git ."
+nmap <leader>y :Files<cr>
 
 "Gitgutter
 set updatetime=100
+
+"Dash
+nmap <leader>d :Dash<cr>
 
 "Mappings
 nmap <leader>s <C-w>

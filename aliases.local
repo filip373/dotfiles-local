@@ -4,6 +4,10 @@ alias bers="bundle exec bin/rspec"
 alias ss="bundle exec spring stop"
 alias cop="bundle exec rubocop -a"
 
+# Binstubs
+alias br="bin/rails"
+alias brs="bin/rspec"
+
 # Git
 alias gs="git status"
 alias gpr="git remote prune origin"
@@ -25,4 +29,14 @@ alias cast_start="(screen -S cast_session -X quit || true) && screen -dmS cast_s
 alias cast_volume_up="screen -S cast_session -X stuff $'\e[A'"
 alias cast_volume_down="screen -S cast_session -X stuff $'\e[B'"
 alias cast_mute="screen -S cast_session -X stuff $'m'"
-alias cst="cast_start"
+alias ccast="cast_start"
+
+# Docker
+alias dcm="docker-compose"
+alias dbuild="docker-compose build"
+alias dstart="docker-compose up --detach --build"
+alias drun="docker-compose run --rm"
+alias dps="docker-compose ps"
+alias dstop="docker-compose stop"
+alias dexec="docker-compose exec"
+alias dlogs="docker-compose logs --follow --timestamps --tail=20"
