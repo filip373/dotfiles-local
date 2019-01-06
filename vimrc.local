@@ -42,6 +42,10 @@ nmap <leader>w :w<cr>
 nmap <leader>cd :set clipboard=unnamed<esc>
 nmap <leader>v :vsp<cr>
 
+"vim-test mapping
+nmap <leader>tt :TestFile<cr>
+nmap <leader>tn :TestNearest<cr>
+
 "General config
 set pastetoggle=<F10>
 set ignorecase

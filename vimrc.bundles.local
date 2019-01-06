@@ -19,6 +19,4 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug '/usr/local/opt/fzf'
 
-"the one below does not seem to make any effect
-UnPlug 'ctrlpvim/ctrlp.vim'
-UnPlug 'janko-m/vim-test'
+call remove(g:plugs, 'ctrlp.vim')
