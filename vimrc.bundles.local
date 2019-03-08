@@ -1,4 +1,5 @@
 Plug 'airblade/vim-gitgutter'
+Plug 'lifepillar/vim-solarized8'
 Plug 'alvan/vim-closetag'
 Plug 'digitaltoad/vim-pug'
 Plug 'henrik/vim-indexed-search'

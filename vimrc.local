@@ -41,10 +41,14 @@ nmap <leader>e :e
 nmap <leader>w :w<cr>
 nmap <leader>cd :set clipboard=unnamed<esc>
 nmap <leader>v :vsp<cr>
+nmap <leader>k :let @+=expand("%")<cr>
 
 "vim-test mapping
 nmap <leader>tt :TestFile<cr>
 nmap <leader>tn :TestNearest<cr>
+
+"vim-rails mapping"
+nmap <leader>a :A<cr>
 
 "General config
 set pastetoggle=<F10>
@@ -55,3 +59,16 @@ set relativenumber
 "Disable column width marking
 set textwidth=0
 set colorcolumn=0
+
+"Disable ale linting
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+let b:ale_linters = []
+let g:ale_linters_explicit = 1
+
+"Solarized config
+"let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+syntax enable
+set background=dark
+colorscheme solarized8_flat
