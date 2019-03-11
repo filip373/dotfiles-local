@@ -40,3 +40,6 @@ alias dps="docker-compose ps"
 alias dstop="docker-compose stop"
 alias dexec="docker-compose exec"
 alias dlogs="docker-compose logs --follow --timestamps --tail=20"
+
+# Lame
+alias lame_all='for i in *.wav; do lame -b 320 -h "${i}" "${i%.wav}.mp3"; done'
