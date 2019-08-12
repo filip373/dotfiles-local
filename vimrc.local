@@ -26,6 +26,7 @@ let g:indexed_search_numbered_only = 1
 
 "Fzf
 let $FZF_DEFAULT_COMMAND = "fd --hidden --type file --exclude .git ."
+let g:fzf_layout = { 'down': '~20%' }
 nmap <leader>y :Files<cr>
 
 "Gitgutter
@@ -42,6 +43,10 @@ nmap <leader>w :w<cr>
 nmap <leader>cd :set clipboard=unnamed<esc>
 nmap <leader>v :vsp<cr>
 nmap <leader>k :let @+=expand("%")<cr>
+map <S-j> 5j
+map <S-k> 5k
+map <S-l> 5w
+map <S-h> 5b
 
 "vim-test mapping
 nmap <leader>tt :TestFile<cr>
@@ -50,11 +55,15 @@ nmap <leader>tn :TestNearest<cr>
 "vim-rails mapping"
 nmap <leader>a :A<cr>
 
+"vim-to-github
+nmap <leader>gh :ToGithub<cr>
+
 "General config
 set pastetoggle=<F10>
 set ignorecase
 set smartcase
 set relativenumber
+set hlsearch
 
 "Disable column width marking
 set textwidth=0
@@ -72,3 +81,6 @@ let g:solarized_termtrans=1
 syntax enable
 set background=dark
 colorscheme solarized8_flat
+
+"Disable colorizer for large files
+let g:colorizer_maxlines = 500

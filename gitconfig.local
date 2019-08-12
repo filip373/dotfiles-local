@@ -3,4 +3,4 @@
   pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
   name = Filip Soszyński
-  email = filip.soszynski@netguru.co
+  email = filip.soszynski@netguru.com

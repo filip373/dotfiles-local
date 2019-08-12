@@ -7,6 +7,7 @@ alias cop="bundle exec rubocop -a"
 # Binstubs
 alias br="bin/rails"
 alias brs="bin/rspec"
+alias brk="bin/rake"
 
 # Git
 alias gs="git status"
@@ -43,3 +44,6 @@ alias dlogs="docker-compose logs --follow --timestamps --tail=20"
 
 # Lame
 alias lame_all='for i in *.wav; do lame -b 320 -h "${i}" "${i%.wav}.mp3"; done'
+
+# Github
+alias gh="hub browse"

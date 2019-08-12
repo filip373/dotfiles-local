@@ -128,3 +128,11 @@ eval "$(rbenv init -)"
 
 export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 export PATH="/usr/local/opt/chromedriver/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export LC_ALL=en_US.UTF-8
